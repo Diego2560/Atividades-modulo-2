@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Execicio 01</title>
+
+<style>
+    body {
+        font-size: 200%;
+    }
+
+</style>
+
+</head>
+
+<body>
+    <h1>Olá, me chamo <span class="nome"></span>, prazer em conhecer-lo</h1>
+    <p>Eu tenho <span class="idade"></span> anos e moro em <span class="cidade"></span>/ <span class="uf"></span>
+    e no meu tempo livre gosto de <span class="tempo-livre"></span> </p>
+</body>
+
+<script>
+    const nome = document.querySelector('.nome');
+    const idade = document.querySelector('.idade');
+    const cidade = document.querySelector('.cidade');
+    const uf = document.querySelector('.uf');
+    const tempoLivre = document.querySelector('.tempo-livre');
+
+    nome.innerText = prompt('Qual é seu nome?');
+    idade.innerText = prompt('Qual é sua idade?');
+    cidade.innerText = prompt('Em qual cidade vc mora?');
+    uf.innerText = prompt('Em qual estado você mora?');
+    tempoLivre.innerText = prompt('O quê você gosta de fazer no tempo livre?');
+
+
+</script>
+
+</html>

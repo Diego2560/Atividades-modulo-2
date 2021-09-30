@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula01</title>
+
+
+<style>
+
+.button {
+    font-size: 32px;
+    padding: 0,2em;
+
+    }
+
+</style>
+
+</head>
+
+<body>
+    <button type="button">Contando</button>
+</body>
+
+<script>
+
+const botao = ducument.querySelector('button');
+
+let contador = 0;
+
+function contagem() {
+        contador++;
+}
+
+function verificarContagem() {
+    if (contador  === 10 ) {
+         alert('Parabéns! Você terminou a contagem');
+
+        return;
+
+    }
+
+    alert('Continue contando...')
+}
+
+botao.addEventListener('click',contagem);
+botao.addEventListener('click',verificarContagem);
+</script>
+
+
+</html>
